@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="orange">#FFA500</color>
+    <color name="cyanlight">#4DD0E1</color>
+    <color name="teal">#4DB6AC</color>
+    <color name="indigo">#7986CB</color>
+    <color name="lightgreen">#AED581</color>
+    <color name="lime">#DCE775</color>
+    <color name="purpel">#BA68C8</color>
+    <color name="blue">#64B5F6</color>
+    <color name="amber">#FFE082</color>
+    <color name="green">#FFE082</color>
+
+    <color name="darkteal">#004D40</color>
+
+
+    <color name="darklime">#827717</color>
+    <color name="gray">#FAFAFA</color>
+    <color name="gray1">#F5F5F5</color>
+    <color name="gray2">#EEEEEE</color>
+    <color name="gray3">#E0E0E0</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkblue">#0D47A1</color>
+    <color name="darkamber">#FF6F00</color>
+    <color name="darkgreen">#1B5E20</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+</resources>

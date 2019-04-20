@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "305017845239",
+    "firebase_url": "https://findbus-14bd2.firebaseio.com",
+    "project_id": "findbus-14bd2",
+    "storage_bucket": "findbus-14bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305017845239:android:9911f1c52867249b",
+        "android_client_info": {
+          "package_name": "com.example.jeetmeena.findbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305017845239-goi8dsetipn99f1f3sbpcilvv6t7e1j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jeetmeena.findbus",
+            "certificate_hash": "22ef47c829ec6a8c4750243682b07d26d887372e"
+          }
+        },
+        {
+          "client_id": "305017845239-ou32hqg80tmfj6t64valsj6smfr0a3r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC16mI1aTiGGu7J2CWWZV4BhP_oI5kwh3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305017845239-ou32hqg80tmfj6t64valsj6smfr0a3r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

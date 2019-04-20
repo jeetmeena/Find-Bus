@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity"
+
+             >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray1"
+            android:id="@+id/relativ12"
+
+            android:orientation="vertical">
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:translationZ="6dp"
+                android:paddingBottom="10dp"
+                android:layout_margin="2dp"
+
+                android:layout_marginBottom="5dp"
+                >
+
+
+
+
+                <fragment
+                    android:id="@+id/place_autocomplete"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+
+                    android:layout_marginTop="10dp"
+
+                    tools:layout="@layout/activity_bus_station" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/relatilayoutAutoText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:id="@+id/editView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+
+                        android:scrollbarAlwaysDrawHorizontalTrack="false"
+                        android:backgroundTint="@color/cyanlight"
+                        android:hint="Current Location"
+                        android:maxWidth="150dp"
+                        android:text="" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/img"
+                        android:layout_marginLeft="10dp"
+
+
+                        />
+
+                    <AutoCompleteTextView
+
+                        android:id="@+id/editView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="false"
+                        android:maxWidth="150dp"
+                        android:backgroundTint="@color/cyanlight"
+                        android:hint="TextView zxczxc"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/relativ13"
+                    android:layout_below="@+id/relatilayoutAutoText"
+                    >
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/calendar_icon"
+                        android:id="@+id/calanderimageView"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/dateTextView"
+                        android:layout_alignBaseline="@+id/timeEditText"
+                        android:layout_toRightOf="@id/calanderimageView"
+                        android:layout_marginLeft="5dp"
+                        android:hint="06/11/18"
+                        android:textSize="22dp"
+
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/timeEditText"
+                        android:layout_alignParentRight="true"
+                        android:hint="07 : 30"
+
+                        android:textSize="22dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/findBuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/relativ13"
+                    android:background="@color/cyanlight"
+                    android:onClick="onClick"
+                    android:text="Find Bus"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha=".4"
+                android:background="@android:color/white"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:translationZ="6dp">
+
+                <TextView
+                    android:id="@+id/someMore"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Some More"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/MoreRight"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="More"
+                    android:textColor="@color/green"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/someMores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/someMore"
+                    android:layout_marginLeft="30dp"
+                    android:text="Some More"
+
+                    android:textSize="15dp"
+
+                    />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/someMores"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="4dp"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none"
+
+                    >
+
+                    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/someMores"
+
+
+                        >
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativ1"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="@drawable/busstation2"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imagevie1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/img" />
+
+                            <Button
+                                android:id="@+id/busStationButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imagevie1"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/cyanlight"
+                                android:onClick="onClick"
+                                android:text="See Bus Station"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white">
+
+                            </Button>/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativ2"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/busstation1"
+
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                            app:layout_constraintLeft_toRightOf="@+id/relativ1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imagevie2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/img" />
+
+                            <Button
+                                android:id="@+id/busStationButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imagevie2"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/cyanlight"
+                                android:onClick="onClick"
+                                android:text="See Bus Station"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white">
+
+                            </Button>/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/busstation2"
+
+                            android:orientation="vertical"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                            app:layout_constraintLeft_toRightOf="@+id/relativ2"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imagevie3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/img" />
+
+                            <Button
+                                android:id="@+id/busStationButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imagevie3"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/cyanlight"
+                                android:text="See Bus Station"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                                android:textColor="@color/white">
+
+                            </Button>/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/viewPagerOfferShow"
+
+                android:elevation="2dp"
+                android:translationZ="4dp"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:text="Find Bus"
+           android:layout_marginBottom="5dp"
+           android:textSize="40dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="15dp"
+
+           />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha=".4"
+                android:background="@android:color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:text="Contect us for any help"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_mail_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="jeetpalmeena143@gmail.com"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/ic_phone_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:textSize="18dp"
+                    android:text="9887811563"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+   <android.support.design.widget.NavigationView
+       android:layout_width="200dp"
+       android:id="@+id/navigation"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       app:headerLayout="@layout/drawer_header"
+       app:menu="@menu/drawer_main"
+       >
+
+   </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

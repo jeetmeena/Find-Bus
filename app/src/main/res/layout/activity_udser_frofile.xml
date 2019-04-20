@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UdserFrofileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:id="@+id/profileImageView"
+        android:background="@drawable/citybackground"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/asfasfsd"
+        android:text="JeetMeena" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asfasfsd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_image_black_24dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profileImageView"
+        android:text="asdasda"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginLeft="10dp"
+        android:text="asdasda"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text4"
+        android:text="asdasda"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/text5"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="LogOut"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

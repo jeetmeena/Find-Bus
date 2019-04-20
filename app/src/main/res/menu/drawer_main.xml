@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:id="@+id/dsfdsf"
+    >
+   <item android:title="Bus Stations"
+   android:id="@+id/firstItem"
+       android:icon="@drawable/bus"
+    />
+    <item android:title="nearby BusStation"
+        android:id="@+id/Seconditem"
+        android:icon="@drawable/bus"
+        />
+    <item android:title="nearby Bus"
+        android:id="@+id/thirdItem"
+        android:icon="@drawable/bus"
+
+        />
+    <item android:title="fourthItem"
+        android:id="@+id/fourthItem"
+        android:icon="@drawable/bus"
+        />
+    <item android:title="fifthItem"
+        android:id="@+id/fifthItem"
+        android:icon="@drawable/bus"
+        />
+    <item android:title="ProFile "
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        />
+    <item android:title="About"
+        android:id="@+id/about"
+        android:icon="@drawable/bus"
+        />
+</group>
+</menu>
