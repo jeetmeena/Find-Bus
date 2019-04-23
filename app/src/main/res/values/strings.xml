@@ -4,7 +4,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="google_maps_key">AIzaSyDRJgHAEAAAZD36KNmtjgj5Qr6caOvauyU</string>
+    <string name="google_maps_key">googlemapApi</string>
     <string name="Drawer_Open">Drawer Open</string>
     <string name="Drawer_Close">"Drawer Open"</string>
     <string name="title_activity_user_profile">UserProfileActivity</string>
